@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 4 — The Brainwashing - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/04.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-4--the-brainwashing"><a class="header" href="#chapter-4--the-brainwashing">Chapter 4 — The Brainwashing</a></h1>
+<p>When was the last time you told yourself you <em>needed</em> it — not wanted, needed — and did you stop to ask whether that was actually true?</p>
+<p>Not needed the way you need water. Needed the way you say it about a video playing while you fall asleep, or noise humming in the background while you work, or a quick check-in before you can settle into anything else. You've probably said some version of "I need this" about all four of the things we're about to look at. So let's look at them, one at a time, quickly, and test each claim the same simple way: was this need there before the habit — or did it only show up after?</p>
+<p><strong>"I need it to relax."</strong></p>
+<p>Think back, honestly, to before this habit existed in your life. There was a version of you — years ago, maybe decades — who relaxed just fine without a queue of videos running in the background. You had other ways of unwinding, because unwinding is a basic human capacity, not a feature that had to be installed. So if the need feels absolute now, ask what actually changed. Not your nervous system. Not your basic wiring. What changed is that relaxing got paired, over and over, with watching — until the two became stuck together in your mind, and now one doesn't seem to happen without the other. That's not a discovery about what you need. That's a habit that moved in and started answering the door.</p>
+<p><strong>"I need it to focus."</strong></p>
+<p>Try sitting down to work with nothing playing, and see what happens in the first few minutes. For a lot of people, it's restlessness — a kind of static under the skin, a pull toward opening something, anything, just to have sound in the room. It feels, in the moment, like proof: <em>see, I can't concentrate without it.</em> But notice what that restlessness actually resembles. It's the same twitchy, unsettled feeling that shows up whenever any habit gets interrupted, whether the habit is useful or not. It isn't your focus breaking down. It's your focus running into a gap where the noise usually sits, and mistaking the gap itself for the problem.</p>
+<p><strong>"I need it to fall asleep."</strong></p>
+<p>Picture lying in real silence for the first time in longer than you can remember — no video propped against the pillow, no voice murmuring you toward unconsciousness. For a while, that silence feels enormous. Loud, almost. Your mind, not used to being alone with itself at that hour, stays a little more alert than usual, and it's easy to read that alertness as evidence: <em>I need the noise, see, I can't drift off without it.</em> But an appliance that's hummed in the corner of a room for ten years does the same thing when it's finally switched off — the sudden quiet feels strange and conspicuous, not because the hum was ever necessary, but because your ears had simply stopped registering it as sound. What you're feeling isn't the absence of something you require. It's the unfamiliarity of a silence you haven't practiced sitting in for a long time.</p>
+<p><strong>"I need it to feel like myself."</strong></p>
+<p>This one's quieter than the others, but it's there — the sense that a day without checking in somehow doesn't feel complete, that something about you is slightly off, slightly unsettled, until you've had your video. Ask the same question here you asked about the rest: was this feeling of "off" present in you before the habit, or did it arrive with it? Nobody is born needing to check a feed to feel like themselves. That particular unease was built the same way everything else in this chapter was built — by repetition, until its absence started registering as a kind of missing piece.</p>
+<p>Notice the pattern, because by now it should be obvious: every single one of these claims, tested the same simple way, falls apart in the same simple place. None of them describe a real need — hunger, sleep, air, the things your body will insist on regardless of habit. What they describe is withdrawal from something familiar, dressed up as necessity. Real needs don't vanish once you stop feeding them for a week. They get louder. What you're describing gets quieter, given time — which tells you plainly which kind of thing it actually is.</p>
+<p>This is the second piece of the machine, alongside the Little Monster, and it's worth naming clearly, because the two are not the same thing and it matters that you can tell them apart. The Little Monster is the craving itself — the small, mechanical pull toward the next video. The Brainwashing is something else: it's the belief that feeding the Monster is also feeding <em>you</em>, that its wanting and your needing are the same thing. They're not. The Monster wants the video. The Brainwashing is what convinces you that giving it what it wants is also somehow good for you — necessary for you — when really it's just been repeating that claim in your ear so consistently, for so long, that you stopped questioning it.</p>
+<p>The discomfort you feel when the noise isn't there is real. I'm not asking you to pretend otherwise. But it's worth being precise about what kind of discomfort it actually is, because the two kinds get confused constantly, and confusing them is exactly what's kept this running for as long as it has. There's the discomfort of genuine deprivation — the kind hunger produces, or thirst, or real exhaustion — and there's the discomfort of simple unfamiliarity, the strangeness of a room gone quiet after years of humming. Only one of those is actually asking you to fix something. The other is just asking you to sit still for a little while and let your ears adjust.</p>
+<p>You were never short on silence, or focus, or rest. You were only ever short on practice being without the noise — and that is a very different thing to fix.</p>
+<p>For four chapters now, these two things have been quietly running your evenings without your ever having looked at either one directly: a small hunger that learned your schedule, and a belief that feeding it was the same as taking care of yourself. Now that both are out in the open, it's time to start walking through, one by one, every specific thing you've told yourself this habit is actually giving you — starting with the belief that watching is somehow the same as doing.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

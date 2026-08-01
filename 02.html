@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 2 — The Hobby That Isn&#x27;t One - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/02.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-2--the-hobby-that-isnt-one"><a class="header" href="#chapter-2--the-hobby-that-isnt-one">Chapter 2 — The Hobby That Isn't One</a></h1>
+<p>The room is dark except for the phone. The video that's just ended was fine — nothing special, a few minutes of something you clicked on because the thumbnail caught your eye, and now the screen has already moved on without asking you, sliding into the next one, the next thumbnail filling the space where the last one was. You weren't finished being tired. You were just checking one thing before you put the phone down and went to sleep.</p>
+<p>That was the plan, anyway. One thing.</p>
+<p>You can probably fill in what happens next without me telling you, because you've lived this exact scene more times than you could count, in more or less this exact room, at more or less this exact hour. The next video starts. It's a little interesting — not gripping, not important, just interesting enough that stopping in the middle of it would feel slightly incomplete, the way leaving a sentence unfinished feels incomplete. So you watch it through. And by the time it ends, there's another one waiting, already loaded, already playing in your peripheral vision even before you've decided anything about it, and somewhere in there the decision to keep watching stops being a decision at all. It just happens. One video becomes the next becomes the next, and at no single point along the way did you sit up and think, <em>yes, I choose this, I am selecting this evening's entertainment on purpose.</em> You just kept not stopping.</p>
+<p>Eventually — and this part you also know — something interrupts it. Not willpower. Not a decision. Usually something small and external: your arm's gone numb under the pillow, or you shift and catch sight of the time in the corner of the screen, and there it is, glowing back at you with a number that doesn't match the story you were telling yourself about how long this was taking.</p>
+<p>It's later than it should be. Later than you meant. You feel a small, specific jolt — not quite guilt, not quite alarm, something closer to the feeling of missing a step on a staircase you thought you knew. <em>How is it that late.</em> And underneath that jolt, if you're honest, there's a flicker of irritation at yourself, quick and quiet, gone almost as soon as it arrives.</p>
+<p>Here's the part worth actually stopping on, though, because it's the part that gets skipped over every single night: that flicker of irritation doesn't stop anything. You feel it, and your thumb is already moving toward the next video anyway, sometimes before the feeling has even finished landing. Not because you decided the irritation didn't matter. Because nothing about this moment ever actually involved you deciding much of anything.</p>
+<p>Now — hold that whole scene for a second, and ask yourself something simple. Is that what a hobby feels like?</p>
+<p>Think about anything you'd genuinely call a hobby. It doesn't matter what it is — cooking, running, playing guitar badly in your bedroom, restoring an old bike, whatever it happens to be for you. A real hobby has a particular shape to it. You choose to start it. At some point, for some reason — you're hungry, it's late, your fingers hurt, you've had enough for today — you choose to stop, and stopping doesn't require a fight. You might feel a small pull to keep going if you're really enjoying yourself, sure, that happens. But when you do stop, there's no jolt of "how did I let this go on so long," no small private irritation at yourself for still being here. You just finish, and you go make dinner, and later, maybe tomorrow, maybe next week, you feel like coming back to it, so you do. That's the whole rhythm of a hobby: chosen, enjoyed, set down, missed, returned to.</p>
+<p>Ask yourself honestly — have you ever lost three hours to a hobby you love without noticing the time passing at all? Not "the time flew because I was having fun," which is a different feeling entirely and one you'd probably describe with a smile rather than a wince. I mean genuinely lost the hours, the way water disappears down a drain without your really watching it go, so that when you finally look up, an entire evening has quietly emptied out somewhere behind you.</p>
+<p>And here's the other question, maybe the more revealing one: have you ever felt that small flicker of dread at the idea of stopping a hobby? Not tiredness, not mild reluctance — dread, the kind that makes you reach for one more before you've even registered wanting one. People don't dread walking away from things they actually chose to be doing. They might feel a bit wistful. They don't brace.</p>
+<p>Sit with that difference for a moment, because it's the whole point of this chapter, and it's not a difference I'm handing you — it's one you already know, if you look honestly at your own last twenty evenings. A hobby is something you come back to on your own terms, something that waits patiently for you and is glad to see you when you return, the way a good guest arrives when invited and leaves when the evening's clearly over, no awkwardness, no lingering by the door. What you were doing in that dark room wasn't that. It didn't wait to be invited. It didn't leave when the evening was obviously over — you were the one still sitting there at an hour you didn't choose, irritated at yourself, reaching for more anyway. That's not a guest who leaves gracefully. That's a guest who's still on your couch at two in the morning while you keep saying "just a little longer" to someone who was never actually asking your permission to stay.</p>
+<p>Notice I haven't told you this is bad, or weak, or something to be ashamed of. I'm not asking you to feel anything about it yet. I'm only asking you to look at the plain mechanics of what actually happens most nights, and compare that, honestly, to what you already know a real hobby feels like from the inside. You don't need me to tell you the word doesn't fit. You can feel it not fitting, the way a shoe a half-size too small doesn't need someone else to point out that it pinches — you already know, every time you put it on.</p>
+<p>So if it isn't a hobby — if the label was just the word you reached for because it was easier than looking closely — then something else is actually going on in that dark room each night. Something that keeps reaching for the next video a half-second before you've decided anything at all. Something that was never really asking your permission in the first place.</p>
+<p>That thing has a shape. It has a pattern. And it's time you finally saw it clearly enough to give it a name.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

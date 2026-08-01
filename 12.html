@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 12 — Why &quot;Cutting Down&quot; Never Works - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/12.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-12--why-cutting-down-never-works"><a class="header" href="#chapter-12--why-cutting-down-never-works">Chapter 12 — Why "Cutting Down" Never Works</a></h1>
+<p>Twenty minutes a day. That's it. That's the rule.</p>
+<p>Monday morning, this feels like a genuinely good plan — measured, sensible, the kind of solution a reasonable adult arrives at. Not quitting, nothing so dramatic. Just structure. Twenty minutes, maybe after dinner, and then the phone goes down and the evening belongs to something else. There's real conviction behind it. This time, the thinking goes, will be different, because this time there's an actual system instead of just vague good intentions.</p>
+<p>And for a few days, it holds. You watch your twenty minutes, you notice yourself wanting a little more, and you close the app anyway, and there's a small satisfaction in that — proof, it seems, that the rule works, that you're finally the kind of person who can do this. What's easy to miss, in that early satisfaction, is the quiet cost of holding the line each night. A small negotiation with yourself as the twenty minutes end. A glance at the clock that didn't used to need checking. A little effort, spent daily, to stand at the door and keep it shut.</p>
+<p>Then, a week or two in, the first crack arrives — and it doesn't look like failure. It looks completely reasonable. It's been a genuinely rough day. Something legitimately stressful happened, and by the evening you're tired in a way that makes twenty minutes feel almost cruelly small. <em>I'll just watch a bit extra tonight,</em> you think. <em>I'll make up for it tomorrow.</em> And there's nothing dishonest in that thought, in the moment — it feels like a fair, human adjustment to a fair, human day, not like abandoning anything.</p>
+<p>That's the part worth looking at closely, because it's exactly how every one of these rules actually falls apart. Not in one dramatic collapse, not with a single moment of throwing your hands up and admitting defeat. It erodes — one small, individually reasonable exception at a time, each one perfectly justifiable on its own terms. A stressful day here. A video a friend sent that you couldn't very well not watch. A weekend where the rule felt like it obviously didn't apply the same way. None of these, taken alone, feels like giving up. Each one feels like a sensible human accommodating a sensible exception.</p>
+<p>Roll the calendar forward a month, and look honestly at where things stand. The twenty minutes has, without any single dramatic turning point, become something closer to what it always used to be. You're checking the clock again, but notice what's changed about that checking — it's not to stop anymore, the way it was in the first careful week. It's closer to habit now, almost absent-minded, and when you do notice how much time has actually passed, there isn't the alarm there used to be. Just a small, quiet shrug. The rule is technically still somewhere in the back of your mind. It just isn't doing anything anymore.</p>
+<p>Here's the mechanism worth naming plainly, because it explains why this exact story plays out for nearly everyone who tries some version of it, regardless of how much willpower they started with: the rule never once addressed the Little Monster's hunger. It didn't shrink the craving, or quiet it, or remove it. All it did was add a second, ongoing job on top of the craving's continued existence — the job of resisting it, fresh, every single day, indefinitely, with no finish line in sight.</p>
+<p>Picture a dam built across a river that never stops flowing. The dam doesn't reduce the river. The water on the other side is exactly as full and exactly as insistent as it always was — the dam simply stands between you and it, holding it back. And a dam like that requires upkeep, every day, forever, because the pressure never lets up on its own. A small crack that gets ignored once doesn't stay small. It's exactly the same water pushing against it tomorrow as it was today, and the day after that, and the day after that — and holding back a pressure that never decreases, using nothing but daily vigilance, is a maintenance job with no retirement date.</p>
+<p>This is the same shape as a door held shut against something pushing from the other side, which is where this whole book started. Setting a twenty-minute limit doesn't open your hand and let go of anything. It just asks you to keep standing at that door, bracing, night after night, indefinitely — and bracing indefinitely against a pressure that never decreases is exhausting in a very specific, very predictable way. Not because you're weak. Because that's simply what standing at a door forever costs, for anyone, regardless of how disciplined they are on any given Tuesday.</p>
+<p>And here's why that guarantees failure over a long enough stretch of time, not through any flaw in the person holding the door, but through simple arithmetic: a cost paid every single day, forever, eventually meets a bad day. A day you're too tired, too stressed, too distracted to pay it. And on that one day, the door gets left open — not because the rule was badly designed, but because no rule that leaves the underlying want fully intact can survive an infinite number of days without a single lapse. Sooner or later, one lapse arrives. And once the door has been open once, propping it open again the next time takes less effort than it did the first time, because the craving on the other side never went anywhere in the meantime — it was always right there, exactly as hungry as before, just waiting for the moment the guard came down.</p>
+<p>This is the real difference between everything Phase 2 was doing and what this chapter is pointing at. The earlier chapters weren't about limits at all — they were about removing, one by one, the actual reasons you believed you wanted to watch in the first place. This chapter is about something different: what happens when you skip that removal, and simply try to police the wanting instead, leaving it fully alive and asking yourself to out-discipline it forever. Managing a craving and removing a craving aren't two different strengths of the same solution. They're two entirely different solutions — and only one of them ever stops requiring effort.</p>
+<p>A rule that manages a craving still leaves the craving standing at the door every single day — and a door held shut forever eventually, on some ordinary Tuesday, gets left open.</p>
+<p>There's often one more thought that shows up right around here, once moderation has quietly failed the way it usually does — something like, <em>well, at least this isn't as serious as a real addiction. At least it's not drinking, or drugs. This is manageable, in the scheme of things.</em> That comparison feels reassuring. It's worth looking at just as closely as everything else in this chapter has been.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="11.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="13.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="11.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="13.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

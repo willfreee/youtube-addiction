@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 9 — &quot;Just One More&quot; and Other Lies We Tell Ourselves - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/09.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-9--just-one-more-and-other-lies-we-tell-ourselves"><a class="header" href="#chapter-9--just-one-more-and-other-lies-we-tell-ourselves">Chapter 9 — "Just One More" and Other Lies We Tell Ourselves</a></h1>
+<p>Just one more.</p>
+<p>Say it in your head the way you actually say it — not as a sentence you're reading, but as the small, familiar voice that offers it to you most nights, almost before you've asked for it. <em>Just one more, and then I'll stop.</em> It sounds so reasonable. It sounds, honestly, like a promise. Let's actually look at it as one.</p>
+<p>Think about what a real bounded desire feels like somewhere else in your life. A piece of chocolate, say. You want one square. You have it. It's good — sweet, satisfying, exactly what you were after — and then, notice this carefully, you're done. Not because you forced yourself to stop. Because the wanting itself was finished. The desire had a shape and a size, and the square of chocolate matched it, and now there's nothing left pulling at you. That's what a genuine "just one" looks like from the inside. It's easy to keep, because there was never anything dishonest about it in the first place — you asked for a specific small thing, and you got it, and the account is settled.</p>
+<p>Now compare that, honestly, to "just one more video." How often does it actually stop at one? Not occasionally slip past one — actually, reliably, most nights, stop clean at one, the way the chocolate does? If you're anything like most people who've ever said that sentence to themselves in the dark, the honest answer is: almost never. Not "sometimes I overdo it." Closer to: it is essentially a rule with no exceptions. Every single time, more or less, "one more" turns out to mean several more, or an hour more, or "until I finally look up and can't believe what time it is."</p>
+<p>Here's the part worth sitting with, because it's the whole hinge of this chapter: when a promise gets broken that reliably, that consistently, night after night, with almost no exceptions worth mentioning — the honest conclusion isn't that you have unusually weak willpower. The honest conclusion is that "one more" was never actually describing what you wanted in the first place. A desire that real and that small doesn't fail to be satisfied nearly every single time it's tested. Something else is going on.</p>
+<p>What's actually being asked for, in that moment, isn't a fixed quantity of anything. It's relief — specifically, relief from the Little Monster's current hunger, the low restless pull that showed up as you reached for the phone. And that hunger doesn't work the way real hunger does. Eating a satisfying meal quiets real hunger for hours, because real hunger is a signal about an actual, finite need, and meeting the need turns the signal off. The Little Monster's hunger doesn't turn off that way. Feeding it doesn't satisfy it — it just resets the clock. One video in, the hunger goes quiet for a moment, and then, almost immediately, the next thumbnail is already doing its work, and the clock starts again from zero. There was never a fixed amount that was going to be enough, because "enough" isn't really part of how this particular hunger operates.</p>
+<p>It's the same shape with the sibling phrases, if you look at them honestly. "Just five minutes" rarely means five minutes. "Just while I eat" rarely stays contained to the meal. Even something as small and ordinary as leaving a tab open "just for a second" — you know the one, still sitting there in your browser three weeks later — was never really a time estimate at all. It was a way of avoiding a decision in that particular moment, dressed up as a small, specific, easily-kept promise. The tab still being open is the proof. The promise was never really about seconds.</p>
+<p>So here's the reframe worth actually keeping, because it changes what you do with all the guilt that's built up around this: this was never a willpower problem. Willpower only fails against something real — a genuine, bounded desire that you knowingly chose to override. But there was no real bounded desire here to keep faith with in the first place. There was only a small, sincere-sounding lie, offered to buy one more minute of quiet from something that was never designed to go quiet for long. You can't fail to keep a promise that was never actually a promise. You can only, eventually, notice that it wasn't one.</p>
+<p>"Just one more" was never a promise you broke. It was never a promise at all — just a small lie told to buy one more minute of quiet from something that was never going to be quiet for long.</p>
+<p>There's often something quieter sitting just behind all this bargaining, too, if you're honest — a small comparison running in the background, something like <em>well, at least I'm not one of those people who spends every evening completely absorbed in someone else's life instead of living my own.</em> It's worth asking, gently, whether that comparison actually holds up as well as it sounds like it should.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="08.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="08.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

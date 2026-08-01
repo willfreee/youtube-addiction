@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 1 — This Is Not About Willpower - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/01.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-1--this-is-not-about-willpower"><a class="header" href="#chapter-1--this-is-not-about-willpower">Chapter 1 — This Is Not About Willpower</a></h1>
+<p>Put down your guard. I mean that literally, right now, before you read another sentence — because you walked into this book braced for a fight, and there isn't going to be one.</p>
+<p>You were expecting a lecture. Somewhere in the back of your mind, you already know the shape of it: be stronger, care more, resist harder. Delete the app and mean it this time. Sit with the craving and grit your teeth until it passes. You've heard some version of this advice before, from other books, other people, your own inner voice at two in the morning after another lost evening — and some part of you picked up this book already exhausted by it, already flinching, the way you'd flinch walking into a gym you'd failed to stick with twelve times before.</p>
+<p>So let me say the thing plainly, because it's going to sound suspicious, almost like a trick: this book is not going to ask you to resist anything.</p>
+<p>No willpower. No gritting of teeth. No white-knuckling through a Friday night while your thumb twitches toward your phone. If your plan for finishing this book was to steel yourself, you can let that go along with everything else — you won't need it.</p>
+<p>I know how that lands. It sounds like the kind of thing people say right before they ask you to do the exact opposite. So look at it for a second instead of just believing it or dismissing it.</p>
+<p>Think about the last time you tried to cut back. Maybe you deleted the app outright — a clean, decisive, this-time-I-mean-it kind of deletion. And maybe it lasted three days. Maybe less. Maybe you told yourself you were just redownloading it to check one thing, one specific video someone mentioned, and you were going to delete it again right after. You know how that story ends, because you've lived it. Not because you're weak. Not because you lack discipline in some way other people don't. It ended that way because of something far more mechanical and far less personal than weakness — you fought a craving while leaving the craving itself completely intact.</p>
+<p>That's worth sitting with, because it's the whole hinge of this book. Willpower doesn't remove a desire. It stands guard over it. Every time you've white-knuckled your way through a craving, the craving was still there the whole time, fully alive, just temporarily held at bay by force — like holding a door shut against something on the other side that never stops pushing. You didn't get rid of anything. You just spent enormous energy standing in front of it, and eventually, inevitably, your arm got tired. Everyone's arm gets tired. That's not a flaw in you; it's how holding a door works.</p>
+<p>So if willpower isn't the tool, what is?</p>
+<p>Understanding. That's the entire method, and it really is that simple to state, even if it takes a book to actually do. Instead of standing guard over the craving, we're going to walk over and look directly at what's generating it — what it actually is, what it's actually made of, what it's actually giving you versus what it merely appears to give you. And here's the part that sounds almost too convenient to be true: once you see it clearly, for what it actually is, you stop needing to guard the door at all. Not because you've become stronger. Because there's nothing left on the other side worth guarding against.</p>
+<p>Picture pulling against something with both arms — a rope, a stuck door, doesn't matter what. Your whole body is engaged, straining, and the longer you pull the more it feels like the thing you're fighting must be enormously important, because look how hard you're having to work against it. That's willpower. Now picture simply opening your hand. Nothing dramatic happens. There's no burst of relief, no triumphant release, because there was never actually a struggle worth having in the first place — you only thought there was one because you'd been straining against it for so long. That second version, the quiet one, the almost boring one — that's what we're aiming for here. Not victory. Just an open hand.</p>
+<p>You don't have to believe any of this yet. I'm not asking you to. All I'm asking is that you stop bracing for the fight you walked in expecting, and read the rest of this the way you'd listen to someone explain a magic trick you've watched a hundred times and never quite understood — with curiosity instead of dread. You're not gearing up for a battle. You're about to be shown how something works.</p>
+<p>Because that's really all this book is. Not a training program for your discipline. Not a set of rules to white-knuckle your way through. A series of things shown to you clearly, one at a time, until a particular illusion you've been living inside of simply stops holding together — the way a magic trick stops being magic the instant you see where the coin actually went.</p>
+<p>You are not here to fight anything. You're here to see something you've never quite been allowed to see clearly — and once you see it, there will be nothing left to fight.</p>
+<p>There's a word you've probably been using for all of this, by the way. You call it a hobby. Something you do for fun, the way another person might collect vinyl or take up running. It's worth asking, honestly, whether that word has ever actually fit what you feel at one in the morning, phone lit up in the dark, thumb already moving to the next one before you've decided to let it.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next prefetch" href="02.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next prefetch" href="02.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

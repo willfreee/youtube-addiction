@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 6 — The Illusion of Relaxation - The Easy Way to Quit YouTube Addiction</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Easy Way to Quit YouTube Addiction</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/willfreee/youtube-addiction/edit/main/src/src/06.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-6--the-illusion-of-relaxation"><a class="header" href="#chapter-6--the-illusion-of-relaxation">Chapter 6 — The Illusion of Relaxation</a></h1>
+<p>There's a particular feeling that shows up when you finally close the app. The shoulders drop a little. The chest loosens. Something in the body seems to exhale, as if it had been holding a breath the whole time without quite noticing. It's real. I'm not going to tell you that feeling is imaginary, because it isn't, and there'd be no point pretending otherwise.</p>
+<p>But it's worth asking, gently, what that relief is actually relief <em>from</em>.</p>
+<p>The easy answer is the day. Work, whatever it held. The general low churn of being a person with responsibilities. That's the story most people tell themselves without examining it — <em>I was tense from everything, and watching helped me unwind.</em> It sounds reasonable enough that it rarely gets a second look. So let's give it one.</p>
+<p>Think honestly about the shape of an ordinary session. Not what you tell yourself about it afterward — what actually happens, moment to moment, if you pay close attention. Does the tension ease steadily from the very first minute, the way it might during a walk, or a bath, or twenty quiet minutes with nothing demanded of you? Or does something else happen first — a small restlessness rising as you sit down, the itch to open the app, a low hum of wanting that wasn't fully there a minute ago and now is. You may recognize that hum. It's the Little Monster stirring, the same felt sensation from a few chapters back, and it tends to arrive right around the moment you decide to watch, not before.</p>
+<p>If that's the pattern — and for most people, it is — then something worth sitting with follows from it. The tension that gets relieved by the end of the session wasn't entirely the day's tension. A good portion of it was manufactured by the sitting-down itself. The craving rose, quietly, the way it always does, and stayed present and slightly uncomfortable until it was finally fed — and what you felt as the session wound down wasn't the day's stress dissolving. It was that specific, freshly created discomfort finally going quiet, now that it had gotten what it wanted.</p>
+<p>Here's a small image worth holding onto, because it says the same thing more plainly than any amount of explaining: think of the relief of taking off a shoe that's been pinching all day. The moment it comes off, there's a genuine wave of relief — real, physical, not imagined. It would be easy, in that moment, to think: <em>this is what a good shoe feels like.</em> But it isn't. That feeling is only relief from a pain the shoe itself was causing. It tells you nothing about whether the shoe was ever doing you any good. It only tells you the shoe finally came off.</p>
+<p>That's most of what's happening at the end of a viewing session. Not rest arriving — a manufactured discomfort finally letting go.</p>
+<p>It's worth being precise about the difference, because they don't actually feel the same once you know to look. Genuine rest tends to leave you a little more yourself afterward — clearer, a bit more energy available, more able to turn your attention to something that asks something of you. Notice, honestly, what you're left with instead, once the phone goes down and the room goes quiet again. Not clarity. A kind of fog. A flatness. The particular worn-down feeling of having sat somewhere for a long time without actually resting — closer to how you feel after hours of low static in the background than after real stillness. Your shoulders may have dropped. Your mind, if you check on it honestly, usually hasn't.</p>
+<p>There's a difference worth naming clearly between this chapter and the one about the Brainwashing a few chapters back. That earlier chapter was about a false belief in a <em>need</em> — the conviction that you require the noise at all. This one is about something quieter and easier to miss: a false belief in a <em>result</em> — mistaking the relief of a problem the habit created for evidence that the habit was doing you some good. The Brainwashing tells you that you need it. This illusion tells you that having had it worked. Both are wrong in the same underlying way, but this one is harder to catch, because the good feeling really is there, right on schedule, at the end of every session, exactly like it would be if this actually were rest.</p>
+<p>What you're calling relaxation is only ever relief — and relief from a problem the habit made is not the same thing as rest.</p>
+<p>There's a cost to this confusion worth sitting with quietly before moving on, because it's easy to skip past. If the fatigue you walked in with from the actual day never actually gets addressed — just quietly buried under a different, manufactured tension and its resolution — then you end most sessions exactly as tired as you started, sometimes more so, with nothing to show for the hour except the fog. And that flat, understimulated feeling has to go somewhere. For a great many people, it goes straight back into more of the same — or gets spread thin across everything else they're doing, a video running quietly in the background of dinner, of tidying up, of falling asleep, because true stillness, once you're this out of practice with it, has started to feel like something to fill rather than something to simply sit inside.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="05.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="07.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="05.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="07.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
