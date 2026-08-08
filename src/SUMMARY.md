@@ -1,25 +1,27 @@
 # Summary
 
-# Unmasking the Trap
-- [Chapter 1 — This Is Not About Willpower](./01.md)
-- [Chapter 2 — The Hobby That Isn't One](./02.md)
-- [Chapter 3 — Meet the Little Monster](./03.md)
-- [Chapter 4 — The Brainwashing](./04.md)
+# Part One: Recognition
+- [Chapter 1: You're Not Broken, You're Trapped](./01.md)
 
-# Dismantling the Specific Illusions
-- [Chapter 5 — "But I Only Watch Educational Videos"](./05.md)
-- [Chapter 6 — The Illusion of Relaxation](./06.md)
-- [Chapter 7 — The Sound of Loneliness: Background Noise & Companionship](./07.md)
-- [Chapter 8 — Who's Really Choosing? The Algorithm Illusion](./08.md)
-- [Chapter 9 — "Just One More" and Other Lies We Tell Ourselves](./09.md)
-- [Chapter 10 — Watching Other People Live](./10.md)
-- [Chapter 11 — The Fear of Missing Out](./11.md)
+# Part Two: Illusion-Dismantling
+- [Chapter 2: The Brainwashing](./02.md)
+- [Chapter 3: The Treat That Isn't One](./03.md)
+- [Chapter 4: The Magic Trick](./04.md)
+- [Chapter 5: Why Willpower Keeps You Stuck](./05.md)
+- [Chapter 6: Watching Isn't Doing](./06.md)
+- [Chapter 7: The Companion That Isn't There](./07.md)
+- [Chapter 8: Who's Really Choosing?](./08.md)
+- [Chapter 9: Someone Else's Life](./09.md)
+- [Chapter 10: The Fear of Missing Out](./10.md)
+- [Chapter 11: "At Least It's Not Drugs"](./11.md)
+- [Chapter 12: The Informed Excuse](./12.md)
+- [Chapter 13: Why Freedom Should Feel Exciting](./13.md)
 
-# Exposing the Willpower & Moderation Trap
-- [Chapter 12 — Why "Cutting Down" Never Works](./12.md)
-- [Chapter 13 — "It's Better Than Real Addictions" — Comparing Yourself Into a Corner](./13.md)
+# Part Three: Reframe
+- [Chapter 14: What Was Never Actually Lost](./14.md)
+- [Chapter 15: Feeding the Real Hunger](./15.md)
+- [Chapter 16: A Different Kind of Quiet](./16.md)
 
-# The Final Shift & Effortless Freedom
-- [Chapter 14 — Nothing Is Being Given Up](./14.md)
-- [Chapter 15 — When the Little Monster Cries Out](./15.md)
-- [Chapter 16 — Life Without the Trap](./16.md)
+# Part Four: Liberation
+- [Chapter 17: One More Video](./17.md)
+- [Chapter 18: The Closing Ritual](./18.md)
