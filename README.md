@@ -16,7 +16,7 @@ This book is an independent adaptation of psychological concepts originally deve
 Feedback, fixes, and community translations are welcome!
 
 1. Typo & Grammar Fixes: Open a Pull Request directly.
-2. Translations: Check open issues or start a discussion if you want to translate the book into another language.
+1. Translations: Check open issues or start a discussion if you want to translate the book into another language.
 
 ## License
 

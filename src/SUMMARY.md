@@ -1,9 +1,11 @@
 # Summary
 
 # Part One: Recognition
+
 - [Chapter 1: You're Not Broken, You're Trapped](./01.md)
 
 # Part Two: Illusion-Dismantling
+
 - [Chapter 2: The Brainwashing](./02.md)
 - [Chapter 3: The Treat That Isn't One](./03.md)
 - [Chapter 4: The Magic Trick](./04.md)
@@ -18,10 +20,12 @@
 - [Chapter 13: Why Freedom Should Feel Exciting](./13.md)
 
 # Part Three: Reframe
+
 - [Chapter 14: What Was Never Actually Lost](./14.md)
 - [Chapter 15: Feeding the Real Hunger](./15.md)
 - [Chapter 16: A Different Kind of Quiet](./16.md)
 
 # Part Four: Liberation
+
 - [Chapter 17: One More Video](./17.md)
 - [Chapter 18: The Closing Ritual](./18.md)
